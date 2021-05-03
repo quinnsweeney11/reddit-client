@@ -28,3 +28,29 @@
 a {
     color: #54beff
 }
+
+.points {
+    color: #FF5700;
+}
+
+.children {
+    color:#519fcf;
+}
+
+.image{
+    width:60%;
+    padding-bottom:20px;
+}
+
+.post_image{
+    max-height:none;
+    min-height:400px;
+}
+
+.image-carousel {
+    width: 60%;
+}
+
+.carousel{
+    width:100%;
+}

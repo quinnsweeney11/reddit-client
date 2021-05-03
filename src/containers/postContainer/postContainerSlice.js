@@ -18,7 +18,9 @@ export const getLocalData = createAsyncThunk(
 export const postContainerSlice = createSlice({
     name:'postContainer',
     initialState,
-    reducers:{},
+    reducers:{
+        
+    },
     extraReducers: {
         [getLocalData.pending]: (state, action) => {
             state.isLoading = true;
