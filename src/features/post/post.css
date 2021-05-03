@@ -53,4 +53,24 @@ a {
 
 .carousel{
     width:100%;
+    padding-bottom: 20px;
+}
+
+.post_carousel {
+    max-height: none;
+    min-height: 400px;
+}
+
+.post_video{
+    max-height: 1100px;
+    min-height: 400px;
+}
+
+.video-container {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.post_carousel .contents {
+    padding-bottom: 20px;
 }
