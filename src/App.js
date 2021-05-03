@@ -7,7 +7,6 @@ import { getLocalData } from './containers/postContainer/postContainerSlice';
 
 function App() {
   const dispatch = useDispatch();
-  
   useEffect(() => {
     dispatch(getLocalData());
   }, [dispatch])
