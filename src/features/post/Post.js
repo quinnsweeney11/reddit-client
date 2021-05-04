@@ -1,13 +1,10 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import "./post.css";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import { PicCarousel } from "../../utils/picCarousel/PicCarousel";
 import "../../../node_modules/video-react/dist/video-react.css";
 import ReactHlsPlayer from "react-hls-player";
-
-import { setGallery } from "./postSlice";
 
 //Function that we use to format the text posts.
 function htmlDecode(input) {
@@ -17,7 +14,6 @@ function htmlDecode(input) {
 }
 
 export function Post(props) {
-    const dispatch = useDispatch();
     if (props.data.secure_media && props.data.secure_media.reddit_video) {
         return (
             <div className="post post_video">

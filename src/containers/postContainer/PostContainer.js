@@ -1,11 +1,10 @@
 import React from 'react';
-import { useSelector, /*useDispatch*/ } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { Post } from '../../features/post/Post';
 import './postContainer.css'
 
 export function PostContainer (props) {
-    // const dispatch = useDispatch();
     const { isLoading, hasError, posts } = useSelector((state) => state.postContainer)
 
 
