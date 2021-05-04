@@ -15,6 +15,15 @@ export const getLocalData = createAsyncThunk(
     }
 )
 
+export const getRedditData = createAsyncThunk(
+    'postContainer/getRedditData',
+    async (url) => {
+        const response = await fetch(url);
+        const output = await response.json();
+        return output;
+    }
+)
+
 export const postContainerSlice = createSlice({
     name:'postContainer',
     initialState,
@@ -32,6 +41,19 @@ export const postContainerSlice = createSlice({
             state.hasError = false;
         },
         [getLocalData.rejected]: (state, action) => {
+            state.isLoading = false;
+            state.hasError = true;
+        },
+        [getRedditData.pending]: (state) => {
+            state.isLoading = true;
+            state.hasError = false;
+        },
+        [getRedditData.fulfilled]: (state, action) => {
+            state.posts = [...action.payload.data.children];
+            state.isLoading = false;
+            state.hasError = false;
+        },
+        [getRedditData.rejected]: (state) => {
             state.isLoading = false;
             state.hasError = true;
         }

@@ -18,9 +18,7 @@ function htmlDecode(input) {
 
 export function Post(props) {
     const dispatch = useDispatch();
-
-    if (props.data.secure_media) {
-        console.log(props.data.secure_media.reddit_video.fallback_url);
+    if (props.data.secure_media && props.data.secure_media.reddit_video) {
         return (
             <div className="post post_video">
                 <div className="info">
@@ -35,11 +33,40 @@ export function Post(props) {
                     </div>
                 </div>
                 <div className="contents">
-                    <h2>{props.data.title}</h2>
-                    <ReactHlsPlayer src={props.data.secure_media.reddit_video.hls_url} autoplay={false} controls={true} class="video-container"/>
+                    <div className="info-item metadata">
+                        <p><span className="rslash">r/</span>{props.data.subreddit}</p>
+                        <p><span className="uslash">u/</span>{props.data.author}</p>
+                    </div>
+                    <h2 className="title-text">{props.data.title}</h2>
+                    <ReactHlsPlayer src={props.data.secure_media.reddit_video.hls_url} autoplay={false} controls={true} className="video-container"/>
                 </div>
             </div>
         );
+    } else if(props.data.secure_media && props.data.secure_media.oembed) {
+        return (
+            <div className="post post_gif">
+                <div className="info">
+                    <div className="info-item points">
+                        <ArrowUpwardIcon />
+                        <p>{props.data.score}</p>
+                    </div>
+                    <br />
+                    <div className="info-item children">
+                        <ChatBubbleIcon />
+                        <p>{props.data.num_comments}</p>
+                    </div>
+                </div>
+                <div className="contents">
+                    <div className="info-item metadata">
+                        <p><span className="rslash">r/</span>{props.data.subreddit}</p>
+                        <p><span className="uslash">u/</span>{props.data.author}</p>
+                    </div>
+                    <h2>{props.data.title}</h2>
+                    <div className="embedded_media" dangerouslySetInnerHTML={{__html: htmlDecode(props.data.secure_media.oembed.html)}}>
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     if (props.data.post_hint === "image") {
@@ -57,6 +84,10 @@ export function Post(props) {
                     </div>
                 </div>
                 <div className="contents">
+                    <div className="info-item metadata">
+                        <p><span className="rslash">r/</span>{props.data.subreddit}</p>
+                        <p><span className="uslash">u/</span>{props.data.author}</p>
+                    </div>
                     <h2>{props.data.title}</h2>
                     <img
                         className="image"
@@ -83,6 +114,10 @@ export function Post(props) {
                     </div>
                 </div>
                 <div className="contents">
+                    <div className="info-item metadata">
+                        <p><span className="rslash">r/</span>{props.data.subreddit}</p>
+                        <p><span className="uslash">u/</span>{props.data.author}</p>
+                    </div>
                     <h2>{props.data.title}</h2>
                     <PicCarousel
                         className="carousel"
@@ -108,6 +143,10 @@ export function Post(props) {
                     </div>
                 </div>
                 <div className="contents">
+                    <div className="info-item metadata">
+                        <p><span className="rslash">r/</span>{props.data.subreddit}</p>
+                        <p><span className="uslash">u/</span>{props.data.author}</p>
+                    </div>
                     <h2>{props.data.title}</h2>
                 </div>
             </div>
@@ -128,6 +167,10 @@ export function Post(props) {
                 </div>
             </div>
             <div className="contents">
+                <div className="info-item metadata">
+                    <p><span className="rslash">r/</span>{props.data.subreddit}</p>
+                    <p><span className="uslash">u/</span>{props.data.author}</p>
+                </div>
                 <h4>{props.data.title}</h4>
                 <div
                     className="selftext"

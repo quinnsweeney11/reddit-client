@@ -1,5 +1,11 @@
 .PostContainer{
     width: 65%;
-    margin:0 auto auto auto;
+    /* margin:0 auto auto auto; */
     padding: 20px 0;
+}
+
+.nonpost-container{
+    width: 65%;
+    padding: 20px 0;
+    height: 2000px;
 }

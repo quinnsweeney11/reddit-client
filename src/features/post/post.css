@@ -10,6 +10,8 @@
 
 .info {
     margin: 10px 0 10px 10px;
+    display:flex;
+    flex-direction: column;
 }
 
 .info-item{
@@ -67,10 +69,42 @@ a {
 }
 
 .video-container {
-    width: 100%;
+    width: 60%;
     padding-bottom: 20px;
 }
 
 .post_carousel .contents {
     padding-bottom: 20px;
+}
+
+.embedded_media {
+    padding-bottom: 20px;
+    width: 60%;
+    margin:auto;
+}
+
+.post_gif {
+    max-height:none;
+    min-height:400px;
+}
+
+.rslash{
+    color:#519fcf;
+}
+
+.uslash{
+    color: #519fcf;
+}
+
+.metadata{
+    display:inline;
+}
+
+.metadata p{
+    margin: 0;
+    text-align: right;
+}
+
+.contents h2 {
+    margin-top:0;
 }

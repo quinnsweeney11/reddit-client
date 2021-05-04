@@ -1,0 +1,40 @@
+.filter {
+    margin: 20px 0 0 0;
+    border: 1px grey solid;
+    height: 10%;
+    width: 20%;
+    position:sticky;
+    top:20px;
+    background-color: #211d1d;
+}
+
+.buttons {
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    text-align:center;
+    margin:20px auto;
+}
+
+button {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color:#b8b2b2;
+}
+
+.active {
+    background-color: #6e6969
+}
+
+.text{
+    padding:0 10px;
+}
+
+.myNote {
+    font-size: 12px;
+}
+
+li {
+    padding-bottom:10px;
+}

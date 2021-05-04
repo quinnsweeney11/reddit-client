@@ -8,13 +8,19 @@ export function PostContainer (props) {
     // const dispatch = useDispatch();
     const { isLoading, hasError, posts } = useSelector((state) => state.postContainer)
 
+
+
     if(isLoading){
         return(
-            <h3>Loading...</h3>
+            <div className="nonpost-container">
+                <h3>Loading...</h3>
+            </div>
         )
     } else if(hasError){
         return(
-            <h1>Error loading posts, please try again later :(</h1>
+            <div className="nonpost-container">
+                <h1>Error loading posts, please try again later :(</h1>
+            </div>
         )
     }
 
