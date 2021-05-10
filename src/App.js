@@ -5,7 +5,6 @@ import './App.css';
 import { PostContainer } from './containers/postContainer/PostContainer';
 import { Filter } from './features/filter/Filter';
 import { getLocalData, getRedditData } from './containers/postContainer/postContainerSlice';
-import { DevNotes } from './features/devNotes/DevNotes';
 
 function App() {
   const dispatch = useDispatch();

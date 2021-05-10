@@ -2,8 +2,7 @@ import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './filter.css';
 import { switchFilter } from './filterSlice';
-import { getRedditData } from '../../containers/postContainer/postContainerSlice';
-
+import { getRedditData, toggleShowPosts } from '../../containers/postContainer/postContainerSlice';
 
 export function Filter(props) {
     const dispatch = useDispatch();
@@ -12,12 +11,13 @@ export function Filter(props) {
     useEffect(() => {
         const url = `https://www.reddit.com/${currentFilter}.json`
         dispatch(getRedditData(url))
+        window.scrollTo(0,0)
     })
     return(
         <div className="filter">
             <div className='buttons'>
                 <button className={currentFilter === 'hot' ? 'active' : 'inactive'} onClick={() => dispatch(switchFilter({filter:'hot'}))}>Hot</button>
-                <button className={currentFilter === 'new' ? 'active' : 'inactive'} onClick={() => dispatch(switchFilter({filter: 'new'}))}>New</button>
+                <button className={currentFilter === 'new' ? 'active' : 'inactive'} onClick={() => dispatch(switchFilter({filter:'new'}))}>New</button>
                 <button className={currentFilter === 'best' ? 'active' : 'inactive'} onClick={() => dispatch(switchFilter({filter: 'best'}))}>Best</button>
             </div>
             <div className='text'>

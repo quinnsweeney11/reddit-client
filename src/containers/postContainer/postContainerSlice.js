@@ -4,6 +4,7 @@ const initialState = {
     posts:[],
     isLoading: false,
     hasError: false,
+    showPosts: false,
 };
 
 export const getLocalData = createAsyncThunk(
@@ -28,7 +29,9 @@ export const postContainerSlice = createSlice({
     name:'postContainer',
     initialState,
     reducers:{
-        
+        toggleShowPosts: (state, action) => {
+            state.showPosts = action.payload
+        }
     },
     extraReducers: {
         [getLocalData.pending]: (state, action) => {
@@ -65,5 +68,7 @@ export const selectPosts = (state) => state.postContainer.posts
 export const selectLoading = (state) => {
     return state.postContainer.loading;
 }
+
+export const { toggleShowPosts } = postContainerSlice.actions;
 
 export default postContainerSlice.reducer;

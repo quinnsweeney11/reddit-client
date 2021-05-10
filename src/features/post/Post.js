@@ -6,6 +6,7 @@ import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import { PicCarousel } from "../../utils/picCarousel/PicCarousel";
 import "../../../node_modules/video-react/dist/video-react.css";
 import ReactHlsPlayer from "react-hls-player";
+import { toggleShowPosts } from '../../containers/postContainer/postContainerSlice'
 
 import { setGallery } from "./postSlice";
 
@@ -18,6 +19,17 @@ function htmlDecode(input) {
 
 export function Post(props) {
     const dispatch = useDispatch();
+    if(props.newWarn === true) {
+        return (
+            <div className="post post_newWarn">
+                <div className="contents">
+                    <h1 className="warning">WARNING: You are browsing using the 'new' filter. These posts are very unmoderated, and can contain innapropriate content. Proceed at your own risk.</h1>
+                    <button onClick={() => dispatch(toggleShowPosts(true))}>I understand, let me in!</button>
+                </div>
+            </div>
+        )
+    }
+
     if (props.data.secure_media && props.data.secure_media.reddit_video) {
         return (
             <div className="post post_video">
