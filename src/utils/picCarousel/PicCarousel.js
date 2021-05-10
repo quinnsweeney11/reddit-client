@@ -1,9 +1,4 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux'
-// import {
-//     nextPic,
-//     previousPic
-// } from './picCarouselSlice';
 import './picCarousel.css';
 
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import "./post.css";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
@@ -7,8 +6,6 @@ import { PicCarousel } from "../../utils/picCarousel/PicCarousel";
 import "../../../node_modules/video-react/dist/video-react.css";
 import ReactHlsPlayer from "react-hls-player";
 import { toggleShowPosts } from '../../containers/postContainer/postContainerSlice'
-
-import { setGallery } from "./postSlice";
 
 //Function that we use to format the text posts.
 function htmlDecode(input) {
