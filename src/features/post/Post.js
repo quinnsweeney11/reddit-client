@@ -6,6 +6,7 @@ import { PicCarousel } from "../../utils/picCarousel/PicCarousel";
 import "../../../node_modules/video-react/dist/video-react.css";
 import ReactHlsPlayer from "react-hls-player";
 import { toggleShowPosts } from '../../containers/postContainer/postContainerSlice'
+import { useDispatch } from 'react-redux'
 
 //Function that we use to format the text posts.
 function htmlDecode(input) {
