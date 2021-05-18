@@ -25,3 +25,5 @@ yarn-error.log*
 /src/features/counter
 
 .idea
+
+babel.config.js

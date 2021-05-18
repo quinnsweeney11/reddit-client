@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders photo post 1`] = `
+<div
+  className="post post_image"
+>
+  <div
+    className="info"
+  >
+    <div
+      className="info-item points"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+        />
+      </svg>
+      <p>
+        35744
+      </p>
+    </div>
+    <br />
+    <div
+      className="info-item children"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+      <p>
+        407
+      </p>
+    </div>
+  </div>
+  <div
+    className="contents"
+  >
+    <div
+      className="info-item metadata"
+    >
+      <p>
+        <span
+          className="rslash"
+        >
+          r/
+        </span>
+        funny
+      </p>
+      <p>
+        <span
+          className="uslash"
+        >
+          u/
+        </span>
+        LordRupertEverton84
+      </p>
+    </div>
+    <h2>
+      My daughter won our town's "Name the Street Sweeper" contest.
+    </h2>
+    <img
+      alt="Post Content"
+      className="image"
+      src="https://i.redd.it/isbqfdsqgcy61.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders text post 1`] = `
+<div
+  className="post"
+>
+  <div
+    className="info"
+  >
+    <div
+      className="info-item points"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+        />
+      </svg>
+      <p>
+        12796
+      </p>
+    </div>
+    <br />
+    <div
+      className="info-item children"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+      <p>
+        2088
+      </p>
+    </div>
+  </div>
+  <div
+    className="contents"
+  >
+    <div
+      className="info-item metadata"
+    >
+      <p>
+        <span
+          className="rslash"
+        >
+          r/
+        </span>
+        Superstonk
+      </p>
+      <p>
+        <span
+          className="uslash"
+        >
+          u/
+        </span>
+        timmmmmmmyy
+      </p>
+    </div>
+    <h4>
+      "Glacier Capital" does not exist.
+    </h4>
+    <div
+      className="selftext"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<!-- SC_OFF --><div class=\\"md\\"><p>My friends, in all the mocking of Glacier Capital shorting GME today, we forgot to ask the most important question: do they actually exist? Bloomberg has a <a href=\\"https://www.bloomberg.com/profile/company/566411Z:US\\">profile</a> of them, if you can call it that, claiming they were founded 3/14/05, but outside of this I can find no evidence that they existed until recently. No article mentions, no chest puffing PR, nothing but their linkedIn pages and their website.</p>
+
+<p>&quot;Glacier Capital&quot; on their <a href=\\"http://glaciercapital.lu/\\">potentially insecure website</a> lists an address of record of <a href=\\"https://imgur.com/XyuT7S3\\">44 Boulevard de Verdun, L-2670 Luxembourg.</a> Now I don&#39;t know about you, but to me, that looks like an apartment building, not a multimillion dollar hedge fund. </p>
+
+<p>So, I called &quot;Glacier.&quot; As we have previously observed, Melvin Capital doesn&#39;t even answer the phone anymore. Citadel at least still has the automated system pick up the phone. But in the case of &quot;Glacier Capital&quot; there is no automated system. Instead, we appear to be calling a personal cell phone, with the voice mailbox of &quot;Alex Larsen.&quot; Don&#39;t believe me? Call yourself. &quot;Glacier Capital&#39;s&quot; public phone number is +352 661 932 584. If you&#39;re in the US or Canada, you&#39;ll have to dial a 011 first to get into the international switching system.</p>
+
+<p>I challenge anyone to prove Glacier Capital exists.</p>
+
+<p>TL;DR &quot;Glacier Capital&quot; is FUD, they don&#39;t exist except on paper.</p>
+
+<p>Edit: One more point of evidence in favor of this being a personal cell phone: If you call once, it goes straight to voicemail, but if you immediately call back it rings several times before going to voicemail. Android has a setting to allow calls to punch through &quot;Do not disturb&quot; mode if the same person calls twice in 5 minutes, which may be exactly what&#39;s happening here.</p>
+
+<p>Edit PS: Credit to <a href=\\"https://old.reddit.com/r/Superstonk/comments/new7b6/check_out_glacier_capitals_head_office_no/\\">this post</a> for inspiring this investigation.</p>
+
+<p>Edit 2: As <a href=\\"/u/mrperson221\\">u/mrperson221</a> said, why would a fund publicly advertise opening a new short position, especially in a stock that has been so volatile and known for retailers jumping on the bandwagon to crush short sellers? It paints a giant target on them. &quot;Glacier Capital&quot; is 100% FUD.</p>
+
+<p>Edit 3: As some have commented, the owner of that cell phone seems to have turned it off or changed the settings, as the second call in a row is no longer punching through and ringing.</p>
+
+<p>Edit 4: It appears the google image results may just be a google error since the searched picture doesn&#39;t seem to appear on the searched pages. I have no idea why they&#39;re showing up as matches or why similar results are not shown when searching the pictures of the other members of their staff.</p>
+
+<p>Edit 5: To be clear, I do not mean to imply that there is no such legal entity as Glacier Capital. There are <a href=\\"https://www.lbr.lu/mjrcs/jsp/DisplayConsultDetailCompanyActionNotSecured.action?time=1621313108273&amp;CURRENT_TIMESTAMP_ID=1621313090005#null\\">public records</a> that show that such an entity does exist. What I am doubting is whether they are actually what they claim to be, an independent investment company, or whether they are a facade for some other entity.</p>
+
+<p>Edit 6: Glacier Capital&#39;s website is not using https, so maybe save yourself the click unless you have to and clear your cookies afterward.</p>
+</div><!-- SC_ON -->",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`renders video post 1`] = `
+<div
+  className="post post_video"
+>
+  <div
+    className="info"
+  >
+    <div
+      className="info-item points"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+        />
+      </svg>
+      <p>
+        61681
+      </p>
+    </div>
+    <br />
+    <div
+      className="info-item children"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+      <p>
+        1179
+      </p>
+    </div>
+  </div>
+  <div
+    className="contents"
+  >
+    <div
+      className="info-item metadata"
+    >
+      <p>
+        <span
+          className="rslash"
+        >
+          r/
+        </span>
+        aww
+      </p>
+      <p>
+        <span
+          className="uslash"
+        >
+          u/
+        </span>
+        jackennethfn
+      </p>
+    </div>
+    <h2
+      className="title-text"
+    >
+      That’s probably the best day that mouse has had or will have in its life.
+    </h2>
+    <video
+      autoplay={false}
+      className="video-container"
+      controls={true}
+      src="https://v.redd.it/wlle3q7kwrz61/HLSPlaylist.m3u8?a=1623909969%2CNjQ4MzYyNDc3MTU1MGY5OWZkNGY4NjBkMDdjNTYyZTBhMmUzNjkxYTA5MzEwODRjMGQxYTU3ZTI5OWU3Y2VlYw%3D%3D&amp;v=1&amp;f=sd"
+    />
+  </div>
+</div>
+`;
