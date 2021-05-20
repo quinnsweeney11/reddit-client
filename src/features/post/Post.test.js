@@ -1,12 +1,11 @@
 import React from "react";
-import { shallow } from "enzyme";
 import { Post } from "./Post";
 import renderer from "react-test-renderer";
 import { imgPost, txtPost, vidPost } from "../../fakeData/post";
 import { Provider } from "react-redux";
 import { store } from "../../app/store";
 
-describe("renders", () => {
+describe("snapshot", () => {
   it("photo post", () => {
     const component = renderer.create(
       <Provider store={store}>

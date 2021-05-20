@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders photo post 1`] = `
+exports[`snapshot photo post 1`] = `
 <div
   className="post post_image"
 >
@@ -78,7 +78,7 @@ exports[`renders photo post 1`] = `
 </div>
 `;
 
-exports[`renders text post 1`] = `
+exports[`snapshot text post 1`] = `
 <div
   className="post"
 >
@@ -182,7 +182,7 @@ exports[`renders text post 1`] = `
 </div>
 `;
 
-exports[`renders video post 1`] = `
+exports[`snapshot video post 1`] = `
 <div
   className="post post_video"
 >
