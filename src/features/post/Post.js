@@ -4,7 +4,6 @@ import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import { PicCarousel } from "../../utils/picCarousel/PicCarousel";
-import "../../../node_modules/video-react/dist/video-react.css";
 import ReactHlsPlayer from "react-hls-player";
 import { toggleShowPosts } from "../../containers/postContainer/postContainerSlice";
 import { useDispatch } from "react-redux";
