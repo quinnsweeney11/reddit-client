@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot photo post 1`] = `
+<div
+  className="PicCarousel"
+>
+  <div
+    className="controls"
+  >
+    <button
+      disabled={true}
+    >
+      🚫
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      👉
+    </button>
+  </div>
+  <img
+    alt="Carousel"
+    className="shown-img"
+    src="https://i.redd.it/6hqhwec7y3171.jpg"
+  />
+</div>
+`;

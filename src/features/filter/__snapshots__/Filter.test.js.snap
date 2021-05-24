@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot main filter 1`] = `
+<div
+  className="filter"
+>
+  <div
+    className="buttons"
+  >
+    <button
+      className="active"
+      onClick={[Function]}
+    >
+      Hot
+    </button>
+    <button
+      className="inactive"
+      onClick={[Function]}
+    >
+      New
+    </button>
+    <button
+      className="inactive"
+      onClick={[Function]}
+    >
+      Best
+    </button>
+  </div>
+  <div
+    className="text"
+  >
+    <h3>
+      This project is still a work in progress, here are some of the things to be added in the future:
+    </h3>
+    <ul>
+      <li>
+        Loading more posts when a user's scroll reaches the bottom of the page
+      </li>
+      <li>
+        Search bar to filter by subreddit
+      </li>
+      <li>
+        Interface to browse comments on posts
+      </li>
+      <li>
+        Improved mobile experience
+      </li>
+    </ul>
+    <p
+      class="myNote"
+    >
+      Made with ❤️ by Quinn Sweeney
+    </p>
+  </div>
+</div>
+`;
