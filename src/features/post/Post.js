@@ -2,6 +2,7 @@ import React from "react";
 import "./post.css";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
+import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import { PicCarousel } from "../../utils/picCarousel/PicCarousel";
 import ReactHlsPlayer from "react-hls-player";
 import { toggleShowPosts } from "../../containers/postContainer/postContainerSlice";
@@ -46,6 +47,15 @@ export function Post(props) {
             <ChatBubbleIcon />
             <p>{props.data.num_comments}</p>
           </div>
+          <div className="info-item open">
+            <a
+              href={`https://www.reddit.com${props.data.permalink}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <OpenInNewIcon />
+            </a>
+          </div>
         </div>
         <div className="contents">
           <div className="info-item metadata">
@@ -80,6 +90,15 @@ export function Post(props) {
           <div className="info-item children">
             <ChatBubbleIcon />
             <p>{props.data.num_comments}</p>
+          </div>
+          <div className="info-item open">
+            <a
+              href={`https://www.reddit.com${props.data.permalink}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <OpenInNewIcon />
+            </a>
           </div>
         </div>
         <div className="contents">
@@ -118,6 +137,15 @@ export function Post(props) {
             <ChatBubbleIcon />
             <p>{props.data.num_comments}</p>
           </div>
+          <div className="info-item open">
+            <a
+              href={`https://www.reddit.com${props.data.permalink}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <OpenInNewIcon />
+            </a>
+          </div>
         </div>
         <div className="contents">
           <div className="info-item metadata">
@@ -150,6 +178,15 @@ export function Post(props) {
             <ChatBubbleIcon />
             <p>{props.data.num_comments}</p>
           </div>
+          <div className="info-item open">
+            <a
+              href={`https://www.reddit.com${props.data.permalink}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <OpenInNewIcon />
+            </a>
+          </div>
         </div>
         <div className="contents">
           <div className="info-item metadata">
@@ -173,34 +210,88 @@ export function Post(props) {
   }
 
   if (props.data.selftext === "") {
-    return (
-      <div className="post">
-        <div className="info">
-          <div className="info-item points">
-            <ArrowUpwardIcon />
-            <p>{props.data.score}</p>
+    if (props.data.domain.startsWith("self.")) {
+      return (
+        <div className="post">
+          <div className="info">
+            <div className="info-item points">
+              <ArrowUpwardIcon />
+              <p>{props.data.score}</p>
+            </div>
+            <br />
+            <div className="info-item children">
+              <ChatBubbleIcon />
+              <p>{props.data.num_comments}</p>
+            </div>
+            <div className="info-item open">
+              <a
+                href={`https://www.reddit.com${props.data.permalink}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <OpenInNewIcon />
+              </a>
+            </div>
           </div>
-          <br />
-          <div className="info-item children">
-            <ChatBubbleIcon />
-            <p>{props.data.num_comments}</p>
+          <div className="contents">
+            <div className="info-item metadata">
+              <p>
+                <span className="rslash">r/</span>
+                {props.data.subreddit}
+              </p>
+              <p>
+                <span className="uslash">u/</span>
+                {props.data.author}
+              </p>
+            </div>
+            <h2>{props.data.title}</h2>
           </div>
         </div>
-        <div className="contents">
-          <div className="info-item metadata">
-            <p>
-              <span className="rslash">r/</span>
-              {props.data.subreddit}
-            </p>
-            <p>
-              <span className="uslash">u/</span>
-              {props.data.author}
-            </p>
+      );
+    } else {
+      return (
+        <div className="post">
+          <div className="info">
+            <div className="info-item points">
+              <ArrowUpwardIcon />
+              <p>{props.data.score}</p>
+            </div>
+            <br />
+            <div className="info-item children">
+              <ChatBubbleIcon />
+              <p>{props.data.num_comments}</p>
+            </div>
+            <div className="info-item open">
+              <a
+                href={`https://www.reddit.com${props.data.permalink}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <OpenInNewIcon />
+              </a>
+            </div>
           </div>
-          <h2>{props.data.title}</h2>
+          <div className="contents">
+            <div className="info-item metadata">
+              <p>
+                <span className="rslash">r/</span>
+                {props.data.subreddit}
+              </p>
+              <p>
+                <span className="uslash">u/</span>
+                {props.data.author}
+              </p>
+            </div>
+            <h2>{props.data.title}</h2>
+            <h4>
+              <a href={props.data.url} target="_blank" rel="noreferrer">
+                {props.data.url}
+              </a>
+            </h4>
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 
   return (
@@ -214,6 +305,15 @@ export function Post(props) {
         <div className="info-item children">
           <ChatBubbleIcon />
           <p>{props.data.num_comments}</p>
+        </div>
+        <div className="info-item open">
+          <a
+            href={`https://www.reddit.com${props.data.permalink}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <OpenInNewIcon />
+          </a>
         </div>
       </div>
       <div className="contents">
