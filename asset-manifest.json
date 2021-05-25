@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/reddit-client/static/css/main.016c7eca.chunk.css",
-    "main.js": "/reddit-client/static/js/main.91574cfb.chunk.js",
-    "main.js.map": "/reddit-client/static/js/main.91574cfb.chunk.js.map",
-    "runtime-main.js": "/reddit-client/static/js/runtime-main.261f87b3.js",
-    "runtime-main.js.map": "/reddit-client/static/js/runtime-main.261f87b3.js.map",
-    "static/css/2.07c9864b.chunk.css": "/reddit-client/static/css/2.07c9864b.chunk.css",
-    "static/js/2.faa43b44.chunk.js": "/reddit-client/static/js/2.faa43b44.chunk.js",
-    "static/js/2.faa43b44.chunk.js.map": "/reddit-client/static/js/2.faa43b44.chunk.js.map",
+    "main.css": "/reddit-client/static/css/main.aa5f1d28.chunk.css",
+    "main.js": "/reddit-client/static/js/main.db232531.chunk.js",
+    "main.js.map": "/reddit-client/static/js/main.db232531.chunk.js.map",
+    "runtime-main.js": "/reddit-client/static/js/runtime-main.91d0fe86.js",
+    "runtime-main.js.map": "/reddit-client/static/js/runtime-main.91d0fe86.js.map",
+    "static/js/2.50549b67.chunk.js": "/reddit-client/static/js/2.50549b67.chunk.js",
+    "static/js/2.50549b67.chunk.js.map": "/reddit-client/static/js/2.50549b67.chunk.js.map",
     "index.html": "/reddit-client/index.html",
-    "static/css/2.07c9864b.chunk.css.map": "/reddit-client/static/css/2.07c9864b.chunk.css.map",
-    "static/css/main.016c7eca.chunk.css.map": "/reddit-client/static/css/main.016c7eca.chunk.css.map",
-    "static/js/2.faa43b44.chunk.js.LICENSE.txt": "/reddit-client/static/js/2.faa43b44.chunk.js.LICENSE.txt"
+    "static/css/main.aa5f1d28.chunk.css.map": "/reddit-client/static/css/main.aa5f1d28.chunk.css.map",
+    "static/js/2.50549b67.chunk.js.LICENSE.txt": "/reddit-client/static/js/2.50549b67.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.261f87b3.js",
-    "static/css/2.07c9864b.chunk.css",
-    "static/js/2.faa43b44.chunk.js",
-    "static/css/main.016c7eca.chunk.css",
-    "static/js/main.91574cfb.chunk.js"
+    "static/js/runtime-main.91d0fe86.js",
+    "static/js/2.50549b67.chunk.js",
+    "static/css/main.aa5f1d28.chunk.css",
+    "static/js/main.db232531.chunk.js"
   ]
 }
