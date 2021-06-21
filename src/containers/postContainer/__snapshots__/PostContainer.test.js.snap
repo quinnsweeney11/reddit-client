@@ -3,5 +3,28 @@
 exports[`snapshot main 1`] = `
 <div
   className="PostContainer"
-/>
+>
+  <div
+    className="search"
+  >
+    <form
+      class="search-form"
+      onSubmit={[Function]}
+    >
+      <input
+        class="search-text"
+        onChange={[Function]}
+        placeholder="subreddit"
+        type="text"
+        value="r/"
+      />
+      <input
+        class="search-button"
+        onClick={[Function]}
+        type="button"
+        value="Search"
+      />
+    </form>
+  </div>
+</div>
 `;

@@ -2,16 +2,14 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./filter.css";
 import { switchFilter } from "./filterSlice";
-import {
-  getRedditData,
-  toggleShowPosts,
-} from "../../containers/postContainer/postContainerSlice";
+import { getRedditData } from "../../containers/postContainer/postContainerSlice";
 
 export function Filter(props) {
   const dispatch = useDispatch();
   const { currentFilter } = useSelector((state) => state.filter);
+  const { currentSub } = useSelector((state) => state.search);
   useEffect(() => {
-    const url = `https://www.reddit.com/${currentFilter}.json`;
+    const url = `https://www.reddit.com/r/${currentSub}/${currentFilter}.json`;
     dispatch(getRedditData(url));
     window.scrollTo(0, 0);
   });

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test 1`] = `
+<div
+  className="search"
+>
+  <form
+    class="search-form"
+    onSubmit={[Function]}
+  >
+    <input
+      class="search-text"
+      onChange={[Function]}
+      placeholder="subreddit"
+      type="text"
+      value="r/"
+    />
+    <input
+      class="search-button"
+      onClick={[Function]}
+      type="button"
+      value="Search"
+    />
+  </form>
+</div>
+`;

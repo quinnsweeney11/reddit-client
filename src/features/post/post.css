@@ -1,121 +1,121 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 .post::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .post {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.post{
-    border: 1px solid grey;
-    margin-bottom: 15px;
-    display:flex;
-    justify-content: space-around;
-    max-height:400px;
-    overflow:scroll;
-    background-color:#211d1d;
+.post {
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  max-height: 400px;
+  overflow: scroll;
+  background-color: #211d1d;
 }
 
 .info {
-    margin: 10px 0 10px 10px;
-    display:flex;
-    flex-direction: column;
+  margin: 10px 0 10px 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.info-item{
-    display:inline-block
+.info-item {
+  display: inline-block;
 }
 
-.contents{
-    flex-grow:4;
-    margin:0 20px;
+.contents {
+  flex-grow: 4;
+  margin: 0 20px;
 }
 
-.selftext{
-    padding-bottom:20px;
+.selftext {
+  padding-bottom: 20px;
 }
 
 a {
-    color: #54beff
+  color: #54beff;
 }
 
 .points {
-    color: #FF5700;
+  color: #ff5700;
 }
 
 .children {
-    color:#519fcf;
+  color: #519fcf;
 }
 
-.image{
-    width:60%;
-    padding-bottom:20px;
+.image {
+  width: 60%;
+  padding-bottom: 20px;
 }
 
-.post_image{
-    max-height:none;
-    min-height:400px;
+.post_image {
+  max-height: none;
+  min-height: 400px;
 }
 
 .image-carousel {
-    width: 60%;
+  width: 60%;
 }
 
-.carousel{
-    width:100%;
-    padding-bottom: 20px;
+.carousel {
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .post_carousel {
-    max-height: none;
-    min-height: 400px;
+  max-height: none;
+  min-height: 400px;
 }
 
-.post_video{
-    max-height: 1100px;
-    min-height: 400px;
+.post_video {
+  max-height: 1100px;
+  min-height: 400px;
 }
 
 .video-container {
-    width: 60%;
-    padding-bottom: 20px;
+  width: 60%;
+  padding-bottom: 20px;
 }
 
 .post_carousel .contents {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .embedded_media {
-    padding-bottom: 20px;
-    width: 60%;
-    margin:auto;
+  padding-bottom: 20px;
+  width: 60%;
+  margin: auto;
 }
 
 .post_gif {
-    max-height:none;
-    min-height:400px;
+  max-height: none;
+  min-height: 400px;
 }
 
-.rslash{
-    color:#519fcf;
+.rslash {
+  color: #519fcf;
 }
 
-.uslash{
-    color: #519fcf;
+.uslash {
+  color: #519fcf;
 }
 
-.metadata{
-    display:inline;
+.metadata {
+  display: inline;
 }
 
-.metadata p{
-    margin: 0;
-    text-align: right;
+.metadata p {
+  margin: 0;
+  text-align: right;
 }
 
 .contents h2 {
-    margin-top:0;
+  margin-top: 0;
 }

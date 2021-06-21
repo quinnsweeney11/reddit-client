@@ -285,7 +285,7 @@ export function Post(props) {
             <h2>{props.data.title}</h2>
             <h4>
               <a href={props.data.url} target="_blank" rel="noreferrer">
-                {props.data.url}
+                Visit linked website
               </a>
             </h4>
           </div>
