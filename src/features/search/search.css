@@ -1,0 +1,20 @@
+.search {
+  margin: 20px 0;
+}
+
+.search-form {
+  height: 50px;
+}
+
+.search-text {
+  height: 40px;
+  width: 50%;
+  font-size: 30px;
+}
+
+.search-button {
+  height: 44px;
+  margin-left: 10px;
+  font-size: 30px;
+  width: auto;
+}
