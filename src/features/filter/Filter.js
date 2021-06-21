@@ -45,7 +45,7 @@ export function Filter(props) {
             Loading more posts when a user's scroll reaches the bottom of the
             page
           </li>
-          <li>Search bar to filter by subreddit</li>
+          <li>S̶e̶a̶r̶c̶h̶ ̶b̶a̶r̶ ̶t̶o̶ ̶f̶i̶l̶t̶e̶r̶ ̶b̶y̶ ̶s̶u̶b̶r̶e̶d̶d̶i̶t̶</li>
           <li>Interface to browse comments on posts</li>
           <li>Improved mobile experience</li>
         </ul>

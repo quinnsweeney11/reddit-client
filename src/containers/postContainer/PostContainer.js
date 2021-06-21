@@ -17,6 +17,7 @@ export function PostContainer(props) {
   if (isLoading) {
     return (
       <div className="nonpost-container">
+        <Search />
         <ReactLoading
           className="loader"
           type="bars"
@@ -29,6 +30,7 @@ export function PostContainer(props) {
   } else if (hasError) {
     return (
       <div className="nonpost-container">
+        <Search />
         <h1>Error loading posts, please try again later :(</h1>
       </div>
     );
@@ -37,6 +39,7 @@ export function PostContainer(props) {
   if (currentFilter.currentFilter === "new" && !showPosts) {
     return (
       <div className="nonpost-container">
+        <Search />
         <Post newWarn={true} />
       </div>
     );
