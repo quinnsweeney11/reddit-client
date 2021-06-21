@@ -108,6 +108,12 @@ a {
   margin: auto;
 }
 
+.embedded_media iframe {
+  position: initial !important;
+  height: 300px;
+  width: 100%;
+}
+
 .post_gif {
   max-height: none;
   min-height: 400px;
