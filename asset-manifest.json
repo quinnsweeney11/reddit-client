@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reddit-client/static/css/main.487b1094.chunk.css",
-    "main.js": "/reddit-client/static/js/main.6be7f47e.chunk.js",
-    "main.js.map": "/reddit-client/static/js/main.6be7f47e.chunk.js.map",
+    "main.css": "/reddit-client/static/css/main.9ed2ce24.chunk.css",
+    "main.js": "/reddit-client/static/js/main.0b2e5a69.chunk.js",
+    "main.js.map": "/reddit-client/static/js/main.0b2e5a69.chunk.js.map",
     "runtime-main.js": "/reddit-client/static/js/runtime-main.91d0fe86.js",
     "runtime-main.js.map": "/reddit-client/static/js/runtime-main.91d0fe86.js.map",
     "static/js/2.fcf79541.chunk.js": "/reddit-client/static/js/2.fcf79541.chunk.js",
     "static/js/2.fcf79541.chunk.js.map": "/reddit-client/static/js/2.fcf79541.chunk.js.map",
     "index.html": "/reddit-client/index.html",
-    "static/css/main.487b1094.chunk.css.map": "/reddit-client/static/css/main.487b1094.chunk.css.map",
+    "static/css/main.9ed2ce24.chunk.css.map": "/reddit-client/static/css/main.9ed2ce24.chunk.css.map",
     "static/js/2.fcf79541.chunk.js.LICENSE.txt": "/reddit-client/static/js/2.fcf79541.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.91d0fe86.js",
     "static/js/2.fcf79541.chunk.js",
-    "static/css/main.487b1094.chunk.css",
-    "static/js/main.6be7f47e.chunk.js"
+    "static/css/main.9ed2ce24.chunk.css",
+    "static/js/main.0b2e5a69.chunk.js"
   ]
 }
